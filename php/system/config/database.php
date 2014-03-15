@@ -7,7 +7,7 @@ $config['master'] = array (
   'charset' => 'utf8',
   'host' => 'localhost',
   'username' => 'root',
-  'password' => '',
+  'password' => 'qian123$',
   'dbname' => 'qa',
 );
 $config['slave'] = false;
