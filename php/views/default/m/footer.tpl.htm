@@ -1,0 +1,93 @@
+		<!-- 底部 -->
+		<footer>
+			<div class="w mt1 ft_link clearfix">
+				<ul>
+					<li class="s <?php if($this->page_title=="首页 - WeCenter"){echo 'now'; }?>"><a href="m/">我要搜索</a></li>
+					<li class="c <?php if($this->page_title=="发现 - WeCenter"){echo 'now'; }?>"><a href="m/explore/category-1">案例分享</a></li>
+					<li class="h <?php if($this->page_title=="互助专区 - WeCenter"){echo 'now'; }?>"><a href="m/help/">互助专区</a></li>
+					<li class="b"><a href="m/bbx/">百 宝 箱</a></li>
+				</ul>
+			</div>
+			Copyright © <?php echo date('Y'); ?> - <?php echo get_setting('site_name'); ?>
+			<p><a href="<?php echo get_setting('base_url'); ?>/<?php if (get_setting('url_rewrite_enable') != 'Y') { ?><?php echo G_INDEX_SCRIPT; ?><?php } ?>ignore_ua_check-TRUE"><?php _e('访问桌面版网站'); ?></a></p>
+		</footer>
+		<!-- end 底部 -->
+		
+		<!-- DO NOT REMOVE -->
+		<div id="aw-ajax-box" class="aw-ajax-box"></div>
+
+		<div style="display:none">
+			<?php echo get_setting('statistic_code'); ?>
+		</div>
+		<!-- / DO NOT REMOVE -->
+		
+		<script type="text/javascript">
+		$(function()
+		{
+			if ($('.aw-question-detail-title .aw-mod-body img')[0])
+			{
+				if ($('.aw-question-detail-title .aw-mod-body img').first().attr('src') == ''){
+			        var weixin_img_url =location.protocol+'//'+location.host+'/static/common/weixin_default_logo.jpg';
+			    }else{
+			        var weixin_img_url = $('.aw-question-detail-title .aw-mod-body img').first().attr('src'),
+			        weixin_img_first = $('.aw-question-detail-title .aw-mod-body img').first().attr('src').replace(/(.*\/){0,}([^\.]+.*)/ig, "$2");
+			        var weixin_img_url = weixin_img_url.replace(weixin_img_first,'90x90_'+weixin_img_first);
+			    }
+			}
+			// 判断是否微信打开
+			if (typeof G_IN_WEIXIN != 'undefined' && G_IN_WEIXIN == true)
+		    {
+		    	$('header, footer').hide();
+		        // if ($.cookie('wechat-tips-close') != 'true')
+		        // {
+		        // 	$('.aw-global-tips').show();
+		        // }
+		        var weixin_handler = setInterval(function()
+				{
+					if (typeof G_IN_WEIXIN != 'undefined' && G_IN_WEIXIN == true)
+					{
+						if (WEIXIN_APP_ID == ''){ 
+							//不支持开放平台
+							WeixinJSBridge.on('menu:share:timeline', function(argv) {
+		                        WeixinJSBridge.invoke('shareTimeline', {
+		                            "img_url":weixin_img_url,
+		                            "title" : document.title,
+		                            "link" :location.href,
+		                            "desc" :($('#weixin-desc').text()=='')?document.description:$('#weixin-desc').text()
+		                        });
+		                    });
+		                    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		                        WeixinJSBridge.invoke('sendAppMessage', {
+		                            "img_url":weixin_img_url,
+		                            "title" : document.title,
+		                            "link" : location.href,
+		                            "desc" : ($('#weixin-desc').text()=='')?document.description:$('#weixin-desc').text()
+		                        });
+		                    });
+		                }
+		                else
+		                {
+		                	//支持开放平台
+		                	WeixinJSBridge.on('menu:share:timeline', function(argv) {
+		                        WeixinJSBridge.invoke('shareTimeline', {
+		                            "title" : document.title,
+		                            "link" : 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + WEIXIN_APP_ID + '&redirect_uri=' + encodeURIComponent(G_BASE_URL + '/m/weixin/redirect/?redirect=' + $.base64.encode(location.href)) + '&response_type=code&scope=snsapi_userinfo&state=OAUTH#wechat_redirect',
+		                            "description" : document.description
+		                        });
+		                    });
+		                    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		                        WeixinJSBridge.invoke('sendAppMessage', {
+		                            "title" : document.title,
+		                            "link" : 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + WEIXIN_APP_ID + '&redirect_uri=' + encodeURIComponent(G_BASE_URL + '/m/weixin/redirect/?redirect=' + $.base64.encode(location.href)) + '&response_type=code&scope=snsapi_userinfo&state=OAUTH#wechat_redirect',
+		                            "description" : document.description
+		                        });
+		                    });
+		                }
+						clearInterval(weixin_handler);
+					}
+				}, 500);
+		    }
+		});
+		</script>
+	</body>
+</html>

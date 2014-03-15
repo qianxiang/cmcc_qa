@@ -1,0 +1,87 @@
+/*
+Author: 
+一尚设计
+Website: http://www.eShang.net
+Telphone: 15870436738
+QQ: 24569985
+*/
+body { background:#fdfeec; font-family:"Microsoft Yahei"; font-size:132%; }
+* { margin:0; padding:0; }
+a { color:#333; text-decoration:none; }
+a:hover { color:#fe9900; text-decoration:none; }
+ul,li { list-style-type:none; }
+.z { float:left; }
+.y { float:right; }
+.cl { clear:both; }
+.red { color:red; }
+.clearfix:after, .clearfix:before { content:"";display:block;height:0;clear:both;visibility:hidden; }
+*html .clearfix { height:1%; zoom:1; }
+*+html .clearfix { height:1%; }
+.blk { height:10px; overflow:hidden; }
+.blk5 { height:5px; overflow:hidden; }
+.mt1 { margin-top:10px; }
+.mt2 { margin-top:20px; }
+.mt5 { margin-top:50px; }
+.w { margin-right:auto; margin-left:auto; width:93%; }
+.line8 { background:url(header_border.gif) repeat-x 0 bottom; height:8px; overflow:hidden; }
+/*header*/
+.header { padding:10px 0 10px; line-height:29px; text-align:center; font-weight:bold; font-size:142%; }
+/*naver*/
+.naver { background:#a2b8c6; height:42px; overflow:hidden; }
+.naver li { display:inline-block; float:left; padding:0 2%; line-height:42px; }
+.naver li a:hover { color:#fff; }
+.naver li.now { background:#fe9900; }
+
+.ask { float:right; padding-left:32px; background:url(ask.gif) no-repeat 0 50%; line-height:32px; height:32px; text-align:right; }
+.ask01 { background:url(lock.gif) no-repeat 0 50%; }
+td { line-height:268%; }
+td a { color:#aa3bd5; }
+.tr { background:#f4f5ef; }
+
+/*thread*/
+.threadlist dl { padding:20px 0 30px; background:url(thread_line.gif) repeat-x 0 bottom; background-size:3px; }
+.threadlist dt { line-height:186%; }
+.threadlist dt span { padding-right:15px; float:right; }
+.threadlist dd { line-height:162%; }
+
+
+/*sp*/
+.splist li { display:block; float:left; margin:3% 3%; padding:10% 0; width:44%; text-align:center; font-size:168%; }
+.splist li.c1 { background:#eeb96b; }
+.splist li.c2 { background:#6cef7b; }
+.splist li.c3 { background:#5ae6c1; }
+.splist li.c4 { background:#f15f9d; }
+.splist li.c5 { background:#d760f0; }
+.splist li.c6 { background:#93ccf7; }
+
+/*login*/
+.login span { display:block; }
+.login em { font-style:normal; float:right; color:red; }
+.input { height:42px; line-height:42px; width:100%; }
+.button { text-align:center; }
+.reg_btn {border:none; background:url(reg_btn.gif) no-repeat; height:50px; width:155px; cursor:pointer; }
+.log_btn {border:none; background:url(log_btn.gif) no-repeat; height:50px; width:155px; cursor:pointer; }
+
+/*search*/
+.search { background:#fff; border:1px solid #ccc; }
+.input2 { border:none; height:42px; line-height:42px; width:90%; }
+.search_btn { border:none; background:url(search.gif) no-repeat 30% 0; height:28px; width:10%; cursor:pointer; } 
+.searchTab { position:relative; background:url(tab-line.gif) repeat-x 0 bottom; height:44px; }
+.searchTab li { display:block; z-index:99; margin-left:-30px; float:left; background:url(tab-off.gif) no-repeat 0 0; height:44px; line-height:44px; }
+.searchTab li span { position:relative; display:block; padding-left:35px; padding-right:30px; background:url(tab-off.gif) no-repeat right -44px; height:44px; color:#666; }
+.searchTab li.z1 { position:relative; z-index:2; }
+.searchTab li.z2 { position:relative; z-index:1; }
+.searchTab li.now { position:relative; display:block; z-index:9999; margin-left:-30px; background:url(tab-on.gif) no-repeat; height:44px; }
+.searchTab li.now span { display:block; padding-right:36px; background:url(tab-on.gif) no-repeat right -44px; height:44px; color:#fff; }
+
+/*flink*/
+.ft_link li { display:block; float:left; padding:40px 0 10px; width:25%; text-align:center; }
+.ft_link li.s { background:url(mobile.gif) no-repeat 50% 0; }
+.ft_link li.c { background:url(case.gif) no-repeat 50% 0; }
+.ft_link li.h { background:url(hz.gif) no-repeat 50% 0; }
+.ft_link li.b { background:url(bbx.gif) no-repeat 50% 0; }
+.ft_link li.now a { color:#2d37c6; }
+.ft_link li.s1 { background:url(mobile_.gif) no-repeat 50% 0; }
+.ft_link li.c1 { background:url(case_.gif) no-repeat 50% 0; }
+.ft_link li.h1 { background:url(hz.gif) no-repeat 50% 0; }
+.ft_link li.b1 { background:url(bbx_.gif) no-repeat 50% 0; }

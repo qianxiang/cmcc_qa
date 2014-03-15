@@ -1,0 +1,14 @@
+<?php if ($this->list) { ?>
+<div class="main mt1 clearfix">
+	<div class="w mt1 threadlist clearfix">
+		<?php foreach ($this->list AS $key => $val) { ?>
+		<dl>
+			<dt><?php echo $val['user_info']['user_name']?>：<a href="m/question/<?php echo $val['question_info']['question_id']; ?>" target="_blank"><?php echo $val['title']?></a> <span><?php echo date("Y年m月d日 H:i",$val['add_time'])?></span></dt>
+			<dd>
+			<?php echo $val['question_info']['question_detail']?>
+			</dd>
+		</dl>
+		<?php } ?>
+	</div>
+</div>
+<?php  } ?>
