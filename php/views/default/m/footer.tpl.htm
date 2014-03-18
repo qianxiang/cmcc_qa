@@ -1,6 +1,7 @@
 		<!-- 底部 -->
-		<footer>
-			<div class="w mt1 ft_link clearfix">
+		<footer class="ft_link fotter_qx ">
+			<div style="margin:10px 10px 10px 10px;">
+			<!--    <div id="fotter_qx"  class="w mt1 ft_link clearfix">  -->
 				<ul>
 					<li class="s <?php if($this->page_title=="首页 - WeCenter"){echo 'now'; }?>"><a href="m/">我要搜索</a></li>
 					<li class="c <?php if($this->page_title=="发现 - WeCenter"){echo 'now'; }?>"><a href="m/explore/category-1">案例分享</a></li>
@@ -8,9 +9,13 @@
 					<li class="b"><a href="m/bbx/">百 宝 箱</a></li>
 				</ul>
 			</div>
+		</footer>
+
+<!--
 			Copyright © <?php echo date('Y'); ?> - <?php echo get_setting('site_name'); ?>
 			<p><a href="<?php echo get_setting('base_url'); ?>/<?php if (get_setting('url_rewrite_enable') != 'Y') { ?><?php echo G_INDEX_SCRIPT; ?><?php } ?>ignore_ua_check-TRUE"><?php _e('访问桌面版网站'); ?></a></p>
 		</footer>
+-->
 		<!-- end 底部 -->
 		
 		<!-- DO NOT REMOVE -->

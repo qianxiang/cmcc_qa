@@ -1090,15 +1090,18 @@ function is_mobile()
 	
 	if (preg_match('/playstation/i', $user_agent) OR preg_match('/ipad/i', $user_agent) OR preg_match('/ucweb/i', $user_agent))
 	{
-		return true;
+		/*  return true;  */
+		return false;
 	}
 	
 	if (preg_match('/iemobile/i', $user_agent) OR preg_match('/mobile\ssafari/i', $user_agent) OR preg_match('/iphone\sos/i', $user_agent) OR preg_match('/android/i', $user_agent) OR preg_match('/symbian/i', $user_agent) OR preg_match('/series40/i', $user_agent))
 	{
-		return false;
+		/*    return false;  */
+		return true;
 	}
 	
-	return true;
+	/*  return true;  */
+	return false;
 }
 
 function in_weixin()
