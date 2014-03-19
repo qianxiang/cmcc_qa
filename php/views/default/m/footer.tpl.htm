@@ -3,10 +3,10 @@
 			<div style="margin:10px 10px 10px 10px;">
 			<!--    <div id="fotter_qx"  class="w mt1 ft_link clearfix">  -->
 				<ul>
-					<li class="s <?php if($this->page_title=="首页 - WeCenter"){echo 'now'; }?>"><a href="m/">我要搜索</a></li>
-					<li class="c <?php if($this->page_title=="发现 - WeCenter"){echo 'now'; }?>"><a href="m/explore/category-1">案例分享</a></li>
-					<li class="h <?php if($this->page_title=="互助专区 - WeCenter"){echo 'now'; }?>"><a href="m/help/">互助专区</a></li>
-					<li class="b"><a href="m/bbx/">百 宝 箱</a></li>
+					<a href="m/">                   <li class="<?php if($this->page_title=="首页 - CMCC QA"){   echo 's1 now'; }  else { echo 's'; }?>">我要搜索</li></a>
+					<a href="m/explore/category-1/"><li class="<?php if($this->page_title=="发现 - CMCC QA"){   echo 'c1 now'; }  else { echo 'c'; }?>">案例分享</li></a>
+					<a href="m/help/">              <li class="<?php if($this->page_title=="互助专区 - CMCC QA"){echo 'hz1 now'; } else { echo 'hz'; } ?>">互助专区</li></a>
+					<a href="m/bbx/">               <li class="<?php if($this->page_title=="百宝箱 - CMCC QA"){  echo 'b1 now'; } else { echo 'b'; } ?>">百 宝 箱</li></a>
 				</ul>
 			</div>
 		</footer>
