@@ -4,34 +4,131 @@
 
 <div class="w mt1 search clearfix">
 	<form  class="aw-relative" action="m/search/" method="post" >
-		
 		<input type="hidden" name="_is_mobile" value="true" />
-		
 		<input type="submit" class="search_btn" value="" style="margin-top: 5px;">
-		
 		<input type="text" style="margin-bottom:0;border: medium none;height: 42px;line-height: 42px;width: 80%;float:right" id="aw-search-query" name="q" autocomplete="off"  >
-
 	</form>
 </div>
 <div class="blk5"></div>
 <div class="line8"></div>
-<div class="aw-content">
-	<div class="aw-title">
-		<h2><?php _e('最新动态'); ?></h2>
+
+<script type="text/javascript" src="/static/js/mobile/jquery.touchwipe.1.1.1.js"></script>
+<script type="text/javascript" src="/static/js/mobile/jquery.cycle.2.92.all.js"></script>
+
+<div id="imagegallery" width=“100%”>		
+	<div id="imagegallery" width=“100%”> 4G 热门问题机型<br/>
+		<table border="2">
+		<tr><td>  &nbsp; &nbsp; &nbsp; Iphone5 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 诺基亚 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 酷派 &nbsp; &nbsp; &nbsp;</td></tr>
+		<tr><td>  &nbsp; &nbsp; &nbsp; 联想 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; HTC &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 小米 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 魅族 &nbsp; &nbsp; &nbsp;</td></tr>
+		<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+		</table>
 	</div>
-	<div class="feed-list">
-		<ul id="index_listview"></ul>
-		<a href="javascript:;" id="load_index_actions" class="aw-load-more"><?php _e('更多'); ?></a>
+	<div style="display: none"> 4G 热点机型
+		<table border="2">
+		<tr><td>  &nbsp; &nbsp; &nbsp; Iphone5 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 诺基亚 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 酷派 &nbsp; &nbsp; &nbsp;</td></tr>
+		<tr><td>  &nbsp; &nbsp; &nbsp; 联想 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; HTC &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 小米 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 魅族 &nbsp; &nbsp; &nbsp;</td></tr>
+		<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+		</table>
 	</div>
+
+	<div style="display: none">4G 热点问题<br/>
+		<table border="2">
+		<tr><td>  &nbsp; &nbsp; &nbsp; Iphone5 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 诺基亚 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 酷派 &nbsp; &nbsp; &nbsp;</td></tr>
+		<tr><td>  &nbsp; &nbsp; &nbsp; 联想 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; HTC &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 小米 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 魅族 &nbsp; &nbsp; &nbsp;</td></tr>
+		<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+			<tr><td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td>
+			<td>  &nbsp; &nbsp; &nbsp; 三星 &nbsp; &nbsp; &nbsp;</td></tr>
+		</table>
+	</div>
+	
+</div>
+
+<script>
+
+$(document).ready(function() {
+	$('#imagegallery').cycle({
+		timeout: 0,
+		fx: 'scrollHorz',
+		next: '#next',
+		prev: '#prev' 
+	});
+
+	$("#imagegallery").touchwipe({
+		wipeLeft: function() {
+			$("#imagegallery").cycle("next");
+		},
+		wipeRight: function() {
+			$("#imagegallery").cycle("prev");
+		}
+	});
+});
+</script>
 </div>
 
 <!--?php TPL::output('m/nav_menu.tpl.htm'); ?-->
+
 <div class="blk5"></div>
+
 <div class="line8"></div>
+
 <script type="text/javascript">
 $(document).ready(function () {
 	load_list_view(G_BASE_URL + '/home/ajax/index_actions/template-m', $('#index_listview'), $('#load_index_actions'));
 });
 </script>
+
 
 <?php TPL::output('m/footer.tpl.htm'); ?>
