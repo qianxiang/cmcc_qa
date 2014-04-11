@@ -1,9 +1,14 @@
 <?php TPL::output('m/header.tpl.htm'); ?>
 <?php TPL::output('m/global_header.tpl.htm'); ?>
 <div class="aw-content">
-	<div class="aw-title">
-		<h2><?php _e('互助专区'); ?></h2>
-	</div>
+	<div class="w mt1 search clearfix">
+	<form name="form1" class="aw-relative" action="m/search/" method="post" >
+		<input type="hidden" name="_is_mobile" value="true" />
+		
+		<input type="text" style="margin-bottom:0;border: medium none;height: 42px;line-height: 42px;width: 85%;float:right" id="aw-search-query" name="q" autocomplete="off"  >
+		<input type="submit" class="search_btn" value="" style="margin-top: 5px;float:right">
+	</form>
+</div>
 	<div class="feed-list">
 		<ul id="index_listview"></ul>
 		<a href="javascript:;" id="load_index_actions" class="aw-load-more"><?php _e('更多'); ?></a>
