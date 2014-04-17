@@ -2,7 +2,8 @@
   <div class="w">
 	中国移动终端通
 	<?php if ($this->user_id) { ?>
-		<div class="z"><a href="account/logout/"><img src="<?php echo G_STATIC_URL; ?>/css/images/login02.gif"></a></div>
+		<div class="z"><a href="account/logout/">
+			<img src="<?php echo G_STATIC_URL; ?>/css/images/login02.gif" width="56" height="25"></a></div>
 		<div class="y"><?php echo $this->user_info['user_name'];?></div>
     <?php }else{ ?>
 	<div class="y"><a href="#"><img src="<?php echo G_STATIC_URL; ?>/css/images/login01.gif"></a></div>
