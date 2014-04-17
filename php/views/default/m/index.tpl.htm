@@ -6,11 +6,10 @@
 	<form name="form1" class="aw-relative" action="m/search/" method="post" >
 		<input type="hidden" name="_is_mobile" value="true" />
 		
-		<input type="text" style="margin-bottom:0;border: medium none;height: 42px;line-height: 42px;width: 85%;float:right" id="aw-search-query" name="q" autocomplete="off"  >
+		<input type="text" style="margin-bottom:0;border: medium none;height: 42px;line-height: 42px;width: 85%;float:left" id="aw-search-query" name="q" autocomplete="off"  >
 		<input type="submit" class="search_btn" value="" style="margin-top: 5px;float:right">
 	</form>
 </div>
-<div class="blk5"></div>
 
 <script type="text/javascript" src="/static/js/mobile/jquery.touchwipe.1.1.1.js"></script>
 <script type="text/javascript" src="/static/js/mobile/jquery.cycle.2.92.all.js"></script>
@@ -18,79 +17,132 @@
 <style type="text/css">
 .aabb { margin:10px; width:100%;text-align: center;}
 .aabb ul {width:80px;width:100%; float:left; margin:0px; list-style-type:none}
-.aabb li a{border:1px #E5E5E5 solid; background-color:#f6f6f6; width:31%; height:30px; list-style:none; margin:1px; padding:3px;float: left; border-top-color:#FFFFFF; border-left-color:#FFFFFF; text-decoration:none; text-align:center;}
+.aabb li a{border:1px #E5E5E5 solid; background-color:#f6f6f6; width:31%; height:40px; list-style:none; margin:1px; padding:3px;float: left; border-top-color:#FFFFFF; border-left-color:#FFFFFF; text-decoration:none; text-align:center;}
 .aabb li a:hover{border:1px #ababab solid; background-color: #EfEfEf; border-top-color:#FFFFFF; border-left-color:#FFFFFF}
 </style>
 
-	<div id="imagegallery" width=“100%” height="50%" >
-		<div class="aabb"  width=“100%”  >
-			 4G 热门问题机型<br/><br/>
-			<ul>
-			    <li><a href="#" onclick="goSearch('中兴u9815')" ><font color="#FFCC00">中兴u9815</font></a></li>
-			    <li><a href="#" onclick="goSearch('中兴Q802T')" ><font color="#FF0000">中兴Q802T</font></a></li>
-			    <li><a href="#" onclick="goSearch('华为MT2-L01')" ><font color="#00cc00">华为MT2-L01</font></a></li>
-			    <li><a href="#" onclick="goSearch('华为G716-L070')" ><font color="#000099">华为G716-L070</font></a></li>
-			    <li><a href="#" onclick="goSearch('华为D2-5000')" ><font color="#000000">华为D2-5000</font></a></li>
-			    
-			    <li><a href="#" onclick="goSearch('三星7108D')" ><font color="#0099ff">三星7108D</font></a></li>
-			    <li><a href="#" onclick="goSearch('三星N9008V')" ><font color="#FF9900">三星N9008V</font></a></li>
-			    <li><a href="#" onclick="goSearch('酷派8720L')" ><font color="#666666">酷派8720L</font></a></li>
-			    <li><a href="#" onclick="goSearch('酷派8736L')" ><font color="#009999">酷派8736</font></a></li>
-			    <li><a href="#" onclick="goSearch('iPhone 5S')" ><font color="#FF0000">iPhone 5S</font></a></li>
-			    <li><a href="#" onclick="goSearch('iphone 5c')" ><font color="#FF0000">iphone 5c</font></a></li>
+<div id="imagegallery" width=“100%” height="50%" >
+	<div class="aabb"  width=“100%”  >
+
+	<table cellpadding="0" cellspacing="0"  width="100%">
+	<tr>
+    	<td>
+        	<table cellpadding="0" cellspacing="0">
+            	<tr>
+                  <td bgcolor="#ffffff" nowrap="nowrap"><a style="color:#6a6969; text-decoration:none;cursor:hand;" href="#" >&nbsp;4G热门问题机型</a></td>
+                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab2.png" width="28" height="34" /></td>
+                  <td bgcolor="#f5b725" nowrap="nowrap"><a style="color:#ffffff; text-decoration:none;cursor:hand;" href="#" >4G热点机型</a></td>
+                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab3.png" width="29" height="34" /></td>
+                  
+                  <td bgcolor="#f5b725" nowrap="nowrap"><a style="color:#ffffff; text-decoration:none;cursor:hand;" href="#" >4G热点问题</a></td>
+                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab4.png" width="30" height="34" /></td>
+              </tr>
+            </table>
+        </td>
+    </tr>
+
+	</table>
+	
+		
+		<ul>
+			<li><a href="#" onclick="goSearch('中兴u9815')" ><font color="#FFCC00">中兴u9815</font></a></li>
+			<li><a href="#" onclick="goSearch('中兴Q802T')" ><font color="#FF0000">中兴Q802T</font></a></li>
+			<li><a href="#" onclick="goSearch('华为MT2-L01')" ><font color="#00cc00">华为MT2-L01</font></a></li>
+			<li><a href="#" onclick="goSearch('华为G716-L070')" ><font color="#000099">华为G716-L070</font></a></li>
+			<li><a href="#" onclick="goSearch('华为D2-5000')" ><font color="#000000">华为D2-5000</font></a></li>
+
+			<li><a href="#" onclick="goSearch('三星7108D')" ><font color="#0099ff">三星7108D</font></a></li>
+			<li><a href="#" onclick="goSearch('三星N9008V')" ><font color="#FF9900">三星N9008V</font></a></li>
+			<li><a href="#" onclick="goSearch('酷派8720L')" ><font color="#666666">酷派8720L</font></a></li>
+			<li><a href="#" onclick="goSearch('酷派8736L')" ><font color="#009999">酷派8736</font></a></li>
+			<li><a href="#" onclick="goSearch('iPhone 5S')" ><font color="#FF0000">iPhone 5S</font></a></li>
+			<li><a href="#" onclick="goSearch('iphone 5c')" ><font color="#FF0000">iphone 5c</font></a></li>
 			
-			    <li><a href="#" onclick="goSearch('海信X6T')" ><font color="#0099ff">海信X6T</font></a></li>
-			    <li><a href="#" onclick="goSearch('海信X8T')" ><font color="#FF9900">海信X8T</font></a></li>
-			    <li><a href="#" onclick="goSearch('HTC8088')" ><font color="#cc00cc">HTC8088</font></a></li>
-			    <li><a href="#" onclick="goSearch('索尼L39T')" ><font color="#666666">索尼L39T</font></a></li>
-			    <li><a href="#" onclick="goSearch('索尼L35T')" ><font color="#009999">索尼L35T</font></a></li>
-			    <li><a href="#" onclick="goSearch('天语Touch1')" ><font color="#FF0000">天语Touch1</font></a></li>
-			    <li><a href="#" onclick="goSearch('天语Touch3')" ><font color="#FF0000">天语Touch3</font></a></li>
+			<li><a href="#" onclick="goSearch('海信X6T')" ><font color="#0099ff">海信X6T</font></a></li>
+			<li><a href="#" onclick="goSearch('海信X8T')" ><font color="#FF9900">海信X8T</font></a></li>
+			<li><a href="#" onclick="goSearch('HTC8088')" ><font color="#cc00cc">HTC8088</font></a></li>
+			<li><a href="#" onclick="goSearch('索尼L39T')" ><font color="#666666">索尼L39T</font></a></li>
+			<li><a href="#" onclick="goSearch('索尼L35T')" ><font color="#009999">索尼L35T</font></a></li>
+			<li><a href="#" onclick="goSearch('天语Touch1')" ><font color="#FF0000">天语Touch1</font></a></li>
+			<li><a href="#" onclick="goSearch('天语Touch3')" ><font color="#FF0000">天语Touch3</font></a></li>
 
-			    <li style="color:#FDFEEC"> END </li>
-			</ul>
-		</div>
-
-		<div class="aabb"  style="display:none" width=“100%” >
-			 4G 热点机型<br/><br/>
-			<ul>
-			    <li><a href="#" onclick="goSearch('华为Y516-T00')" ><font color="#FFCC00">华为Y516-T00</font></a></li>
-			    <li><a href="#" onclick="goSearch('华为P6')" ><font color="#FF0000">华为P6</font></a></li>
-			    <li><a href="#" onclick="goSearch('摩托罗拉E5251')" ><font color="#00cc00">摩托罗拉E5251</font></a></li>
-			    <li><a href="#" onclick="goSearch('三星I93081')" ><font color="#000099">三星I93081</font></a></li>
-			    <li><a href="#" onclick="goSearch('三星I9108')" ><font color="#000000">三星I9108</font></a></li>
-			    <li><a href="#" onclick="goSearch('K-TouchKis4')" ><font color="#FF0099">K-TouchKis4</font></a></li>
-			    <li><a href="#" onclick="goSearch('HTC 9088')" ><font color="#0099ff">HTC 9088</font></a></li>
-			    <li><a href="#" onclick="goSearch('康佳V976')" ><font color="#FF9900">康佳V976</font></a></li>
-			    <li><a href="#" onclick="goSearch('中兴U880')" ><font color="#cc00cc">中兴U880</font></a></li>
-			    <li><a href="#" onclick="goSearch('联想A278t')" ><font color="#666666">联想A278t</font></a></li>
-			    <li><a href="#" onclick="goSearch('海尔HT-I857')" ><font color="#009999">海尔HT-I857</font></a></li>
-			    <li><a href="#" onclick="goSearch('ggg')" ><font color="#FF0000">ggg</font></a></li>
-			</ul>
-			<ul>
-			</ul>
-		</div>
-
-		<div class="aabb"  style="display:none" width=“100%” >
-			4G 热点问题<br/><br/>
-			<ul>
-			    <li><a href="#" onclick="goSearch('客户端闪退')" ><font color="#FFCC00">客户端闪退</font></a></li>
-			    <li><a href="#" onclick="goSearch('在线视频播放失败')" ><font color="#FF0000">在线视频播放失败</font></a></li>
-			    <li><a href="#" onclick="goSearch('无法识别到SD卡')" ><font color="#00cc00">无法识别到SD卡</font></a></li>
-			    <li><a href="#" onclick="goSearch('无法上网')" ><font color="#000099">无法上网</font></a></li>
-			    <li><a href="#" onclick="goSearch('自动重启')" ><font color="#000000">自动重启</font></a></li>
-			    <li><a href="#" onclick="goSearch('下载失败')" ><font color="#FF0099">下载失败</font></a></li>
-			    <li><a href="#" onclick="goSearch('脱网')" ><font color="#0099ff">脱网</font></a></li>
-			    <li><a href="#" onclick="goSearch('黑屏')" ><font color="#FF9900">黑屏</font></a></li>
-			    <li><a href="#" onclick="goSearch('发送彩信失败')" ><font color="#cc00cc">发送彩信失败</font></a></li>
-			    <li><a href="#" onclick="goSearch('拨打电话出现单通')" ><font color="#666666">拨打电话出现单通</font></a></li>
-			    <li><a href="#" onclick="goSearch('无法安装软件')" ><font color="#009999">无法安装软件</font></a></li>
-			    <li><a href="#" onclick="goSearch('无法开机')" ><font color="#FF0000">无法开机</font></a></li>
-			</ul>
-			<ul>
-			</ul>
-		</div>
+			<li style="color:#FDFEEC"> END </li>
+		</ul>
 	</div>
+
+	<div class="aabb"  style="display:none" width=“100%” >
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+	    	<td>
+	        	<table cellpadding="0" cellspacing="0">
+	            	<tr>
+	                  <td bgcolor="#ffffff" nowrap="nowrap"><a style="color:#6a6969; text-decoration:none;cursor:hand;" href="#" >&nbsp;4G热点机型</a></td>
+	                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab2.png" width="28" height="34" /></td>
+	                  <td bgcolor="#f5b725" nowrap="nowrap"><a style="color:#ffffff; text-decoration:none;cursor:hand;" href="#" >4G热点问题</a></td>
+	                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab3.png" width="29" height="34" /></td>
+	                  
+	                  <td bgcolor="#f5b725" nowrap="nowrap"><a style="color:#ffffff; text-decoration:none;cursor:hand;" href="#" >4G热门问题机型</a></td>
+	                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab4.png" width="30" height="34" /></td>
+	              </tr>
+	            </table>
+	        </td>
+	    </tr>
+		</table>
+		<ul>
+			<li><a href="#" onclick="goSearch('华为Y516-T00')" ><font color="#FFCC00">华为Y516-T00</font></a></li>
+			<li><a href="#" onclick="goSearch('华为P6')" ><font color="#FF0000">华为P6</font></a></li>
+			<li><a href="#" onclick="goSearch('摩托罗拉E5251')" ><font color="#00cc00">摩托罗拉E5251</font></a></li>
+			<li><a href="#" onclick="goSearch('三星I93081')" ><font color="#000099">三星I93081</font></a></li>
+			<li><a href="#" onclick="goSearch('三星I9108')" ><font color="#000000">三星I9108</font></a></li>
+			<li><a href="#" onclick="goSearch('K-TouchKis4')" ><font color="#FF0099">K-TouchKis4</font></a></li>
+			<li><a href="#" onclick="goSearch('HTC 9088')" ><font color="#0099ff">HTC 9088</font></a></li>
+			<li><a href="#" onclick="goSearch('康佳V976')" ><font color="#FF9900">康佳V976</font></a></li>
+			<li><a href="#" onclick="goSearch('中兴U880')" ><font color="#cc00cc">中兴U880</font></a></li>
+			<li><a href="#" onclick="goSearch('联想A278t')" ><font color="#666666">联想A278t</font></a></li>
+			<li><a href="#" onclick="goSearch('海尔HT-I857')" ><font color="#009999">海尔HT-I857</font></a></li>
+			<li><a href="#" onclick="goSearch('ggg')" ><font color="#FF0000">ggg</font></a></li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+	<div class="aabb"  style="display:none" width=“100%” >
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+	    	<td>
+	        	<table cellpadding="0" cellspacing="0">
+	            	<tr>
+	                  <td bgcolor="#f5b725" nowrap="nowrap"><a style="color:#6a6969; text-decoration:none;cursor:hand;" href="#" >&nbsp;4G热点问题</a></td>
+	                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab4.png" width="28" height="34" /></td>
+	                  <td bgcolor="#ffffff" nowrap="nowrap"><a style="color:#6a6969; text-decoration:none;cursor:hand;" href="#" >4G热门问题机型</a></td>
+	                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab6.png" width="29" height="34" /></td>
+	                  
+	                  <td bgcolor="#ffffff" nowrap="nowrap"><a style="color:#6a6969; text-decoration:none;cursor:hand;" href="#" >4G热点机型</a></td>
+	                  <td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab6.png" width="30" height="34" /></td>
+	              </tr>
+	            </table>
+	        </td>
+	    </tr>
+
+		</table>
+		<ul>
+			<li><a href="#" onclick="goSearch('客户端闪退')" ><font color="#FFCC00">客户端闪退</font></a></li>
+			<li><a href="#" onclick="goSearch('在线视频播放失败')" ><font color="#FF0000">在线视频播放失败</font></a></li>
+			<li><a href="#" onclick="goSearch('无法识别到SD卡')" ><font color="#00cc00">无法识别到SD卡</font></a></li>
+			<li><a href="#" onclick="goSearch('无法上网')" ><font color="#000099">无法上网</font></a></li>
+			<li><a href="#" onclick="goSearch('自动重启')" ><font color="#000000">自动重启</font></a></li>
+			<li><a href="#" onclick="goSearch('下载失败')" ><font color="#FF0099">下载失败</font></a></li>
+			<li><a href="#" onclick="goSearch('脱网')" ><font color="#0099ff">脱网</font></a></li>
+			<li><a href="#" onclick="goSearch('黑屏')" ><font color="#FF9900">黑屏</font></a></li>
+			<li><a href="#" onclick="goSearch('发送彩信失败')" ><font color="#cc00cc">发送彩信失败</font></a></li>
+			<li><a href="#" onclick="goSearch('拨打电话出现单通')" ><font color="#666666">拨打电话出现单通</font></a></li>
+			<li><a href="#" onclick="goSearch('无法安装软件')" ><font color="#009999">无法安装软件</font></a></li>
+			<li><a href="#" onclick="goSearch('无法开机')" ><font color="#FF0000">无法开机</font></a></li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+</div>
 
 <script>
 
@@ -118,7 +170,6 @@ $(document).ready(function() {
 	});
 });
 </script>
-</div>
 
 <!--?php TPL::output('m/nav_menu.tpl.htm'); ?-->
 
