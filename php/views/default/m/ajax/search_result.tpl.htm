@@ -8,8 +8,9 @@
 		<?php }else{ ?> 
 			<tr class="tr" >
 		<?php }?>	
-			<td width="25%" valign="middle" align="center"><img src="<?php echo G_STATIC_URL; ?>/css/images/list_ico.gif"></td>
+			<td width="20%" valign="middle" align="center"><img src="<?php echo G_STATIC_URL; ?>/css/images/list_ico.png"></td>
 			<td width="75%"><a href="<?php echo $val['url']; ?>"><?php echo $val['name']; ?></a></td>
+			<td width="5%">&nbsp;</td>
 		</tr>
 	<?php } else if ($val['type'] == 'topics') { ?>
 		<?php if($key%2!=0){ ?> 
@@ -17,8 +18,9 @@
 		<?php }else{ ?> 
 			<tr class="tr" >
 		<?php }?>	
-			<td width="25%" valign="middle" align="center"><img src="<?php echo G_STATIC_URL; ?>/css/images/list_ico.gif"></td>
+			<td width="20%" valign="middle" align="center"><img src="<?php echo G_STATIC_URL; ?>/css/images/list_ico.png"></td>
 			<td width="75%"><a href="<?php echo $val['url']; ?>"><?php echo $val['name']; ?></a></td>
+			<td width="5%">&nbsp;</td>
 		</tr>
 	<?php } else if ($val['type'] == 'questions') { ?>
 		<?php if($key%2!=0){ ?> 
@@ -26,8 +28,9 @@
 		<?php }else{ ?> 
 			<tr class="tr" >
 		<?php }?>	
-			<td width="25%" valign="middle" align="center"><img src="<?php echo G_STATIC_URL; ?>/css/images/list_ico.gif"></td>
+			<td width="20%" valign="middle" align="center"><img src="<?php echo G_STATIC_URL; ?>/css/images/list_ico.png"></td>
 			<td width="75%"><a href="<?php echo $val['url']; ?>"><?php echo $val['name']; ?></a></td>
+			<td width="5%">&nbsp;</td>
 		</tr>
 	<?php } ?>
 <?php } ?>
