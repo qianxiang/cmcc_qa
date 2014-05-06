@@ -34,7 +34,7 @@ ul,li { list-style-type:none; }
 
 .ask { float:right; padding-left:32px; background:url(ask.gif) no-repeat 0 50%; line-height:32px; height:32px; text-align:right; }
 .ask01 { background:url(lock.gif) no-repeat 0 50%; }
-td { line-height:268%; }
+/*  td { line-height:268%; }  */
 td a { color:#aa3bd5; }
 .tr { background:#f4f5ef; }
 
