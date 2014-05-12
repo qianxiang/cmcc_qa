@@ -18,7 +18,7 @@
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab3.png" width="23" height="29" /></td>
 								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab4.png" height="29" style="font-size:16px;" >&nbsp;热点问题&nbsp;</td>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab5.png" width="24" height="29" /></td>
-								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab4.png"          height="29" style="font-size:16px;" >&nbsp;我的问题&nbsp;</td>
+								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab4.png"          height="29" style="font-size:16px;" >&nbsp;我关注的问题&nbsp;</td>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab6.png" width="24" height="29" /></td>
 							</tr>                
 						</table>
@@ -47,7 +47,7 @@
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab8.png" width="23" height="29" /></td>
 								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab2.png" height="29" style="font-size:16px;" >&nbsp;热点问题&nbsp;</td>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab3.png" width="24" height="29" /></td>
-								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab4.png"          height="29" style="font-size:16px;" >&nbsp;我的问题&nbsp;</td>
+								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab4.png"          height="29" style="font-size:16px;" >&nbsp;我关注的问题&nbsp;</td>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab6.png" width="24" height="29" /></td>
 							</tr>                
 						</table>
@@ -76,7 +76,7 @@
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab5.png" width="23" height="29" /></td>
 								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab4.png" height="29" style="font-size:16px;" >&nbsp;热点问题&nbsp;</td>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab8.png" width="24" height="29" /></td>
-								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab2.png"          height="29" style="font-size:16px;" >&nbsp;我的问题&nbsp;</td>
+								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab2.png"          height="29" style="font-size:16px;" >&nbsp;我关注的问题&nbsp;</td>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab9.png" width="24" height="29" /></td>
 							</tr>                
 						</table>
@@ -101,6 +101,12 @@
 
 <script>
 $(document).ready(function() {
+	load_list_view(G_BASE_URL + '/home/ajax/index_actions/template-m', $('#index_listview'), $('#load_index_actions'));
+
+	load_list_view(G_BASE_URL + '/m/ajax/hot_topics_list/', $('#hot_topics_list'), $('#load_hot_topics'), 1);
+
+	load_list_view(G_BASE_URL + '/home/ajax/index_actions/filter-focus__template-m', $('#index_listview'), $('#load_index_actions'));
+
 	$('#imagegallery').cycle({
 		timeout: 0,
 		fx: 'scrollHorz',
@@ -117,11 +123,7 @@ $(document).ready(function() {
 		}
 	});
 
-	load_list_view(G_BASE_URL + '/home/ajax/index_actions/template-m', $('#index_listview'), $('#load_index_actions'));
-
-	load_list_view(G_BASE_URL + '/m/ajax/hot_topics_list/', $('#hot_topics_list'), $('#load_hot_topics'), 1);
-
-	load_list_view(G_BASE_URL + '/home/ajax/index_actions/filter-focus__template-m', $('#index_listview'), $('#load_index_actions'));
+	
 });
 </script>
 
