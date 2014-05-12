@@ -1,19 +1,12 @@
 <?php TPL::output('m/header.tpl.htm'); ?>
 <?php TPL::output('m/global_header.tpl.htm'); ?>
 <div class="aw-content">
-	<div class="w mt1 search clearfix">
-		<form name="form1" class="aw-relative" action="m/search/" method="post" >
-			<input type="hidden" name="_is_mobile" value="true" />
-			
-			<input type="text" style="margin-bottom:0;border: medium none;height: 42px;line-height: 42px;width: 85%;float:left" id="aw-search-query" name="q" autocomplete="off"  >
-			<input type="submit" class="search_btn" value="" style="margin-top: 5px;float:right">
-		</form>
-	</div>
+	
 	<br/>
 	<script type="text/javascript" src="/static/js/mobile/jquery.touchwipe.1.1.1.js"></script>
 	<script type="text/javascript" src="/static/js/mobile/jquery.cycle.2.92.all.js"></script>
-	<div id="imagegallery" width=“100%” height="50%" >
-		<div width=“100%” >
+	<div id="imagegallery" width="100%"  >
+		<div width="100%" >
 			
 			<table cellpadding="0" cellspacing="0" align="center" >
 				<tr>
@@ -35,10 +28,15 @@
 					<td bgcolor="ffd290" height="2px" ></td>
 				</tr>
 			</table>
-			
+
+			<div class="feed-list">
+				<ul id="index_listview"></ul>
+				<a href="javascript:;" id="load_index_actions" class="aw-load-more"><?php _e('更多'); ?></a>
+			</div>
+			<br/><br/><br/><br/><br/><br/><br/><br/>
 		</div>
 		
-		<div  style="display:none" width=“100%” >
+		<div  style="display:none" width="100%" >
 			<table cellpadding="0" cellspacing="0" align="center" >
 				<tr>
 					<td>
@@ -59,10 +57,15 @@
 					<td bgcolor="ffd290" height="2px" ></td>
 				</tr>
 			</table>
+
+			<div class="aw-topic-list">
+				<ul id="hot_topics_list"></ul>
+				<a class="aw-load-more" id="load_hot_topics"><?php _e('更多'); ?></a>
+			</div>
 			
 		</div>
 		
-		<div  style="display:none" width=“100%” >
+		<div  style="display:none" width="100%" >
 			<table cellpadding="0" cellspacing="0" align="center" >
 				<tr>
 					<td>
@@ -83,6 +86,13 @@
 					<td bgcolor="ffd290" height="2px" ></td>
 				</tr>
 			</table>
+
+			<div class="feed-list">
+				<ul id="index_listview" class="aw-focus-question"></ul>
+				<a href="javascript:;" id="load_index_actions" class="aw-load-more"><?php _e('更多'); ?></a>
+			</div>
+
+
 			
 		</div>
 		
@@ -106,16 +116,16 @@ $(document).ready(function() {
 			$("#imagegallery").cycle("prev");
 		}
 	});
+
+	load_list_view(G_BASE_URL + '/home/ajax/index_actions/template-m', $('#index_listview'), $('#load_index_actions'));
+
+	load_list_view(G_BASE_URL + '/m/ajax/hot_topics_list/', $('#hot_topics_list'), $('#load_hot_topics'), 1);
+
+	load_list_view(G_BASE_URL + '/home/ajax/index_actions/filter-focus__template-m', $('#index_listview'), $('#load_index_actions'));
 });
 </script>
 
 <!--?php TPL::output('m/nav_menu.tpl.htm'); ?-->
 <div class="blk5"></div>
-
-<script type="text/javascript">
-	$(document).ready(function () {
-		load_list_view(G_BASE_URL + '/home/ajax/index_actions/template-m1', $('#index_listview'), $('#load_index_actions'));
-	});
-</script>
 
 <?php TPL::output('m/footer.tpl.htm'); ?>
