@@ -1,15 +1,19 @@
 <?php TPL::output('m/header.tpl.htm'); ?>
 <?php TPL::output('m/global_header.tpl.htm'); ?>
-<div class="aw-content">&nbsp;
-	
-	<script type="text/javascript" src="/static/js/mobile/jquery.touchwipe.1.1.1.js"></script>
-	<script type="text/javascript" src="/static/js/mobile/jquery.cycle.2.92.all.js"></script>
+<div class="aw-content" width="100%">&nbsp;
+
+<script type="text/javascript" src="/static/js/mobile/jquery.touchwipe.1.1.1.js"></script>
+<script type="text/javascript" src="/static/js/mobile/jquery.cycle.2.92.all.js"></script>
+<style type="text/css">
+.aabb { margin:0px; width:100%;text-align: left;}
+.ccdd { margin:0px; width:100%;text-align: left;}
+</style>
 	<div id="imagegallery" width="100%" height="800" >
-		<div width="100%" height="800">
-			<table cellpadding="0" cellspacing="0" align="center" >
+		<div  class="aabb"   height="800">
+			<table  cellpadding="0" cellspacing="0" align="center" >
 				<tr>
 					<td>
-						<table cellpadding="0" cellspacing="0">
+						<table width="100%" cellpadding="0" cellspacing="0">
 							<tr>
 								<td><img src="<?php echo G_STATIC_URL; ?>/css/images/tab1.png" width="20" height="29" /></td>
 								<td background="<?php echo G_STATIC_URL; ?>/css/images/tab2.png" height="29" style="font-size:15px;">&nbsp;最新问题&nbsp;</td>
@@ -26,6 +30,7 @@
 					<td bgcolor="ffd290" height="2px" ></td>
 				</tr>
 			</table>
+			<br/>
 
 			<div class="feed-list">
 				<ul id="index_listview"></ul>
